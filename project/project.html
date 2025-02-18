@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>3068438H_final_project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+  <head>
+<meta charset="utf-8" https://codepen.io//>
+  <title>Bathing Water Quality Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Mapbox CSS and JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css" />
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet" />
+  <!-- Google API -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+  <div id="map"></div> 
+  <div id="panel"></div>
+  
+ <div class = "box-container">
+  <div id="hover-box" class = 'box'>
+  <h3>Hover over a marker</h3>
+  </div>
+ 
+   <div id="button1" class="box">
+      <p>Hover over Fistral Beach pin for live weather updates</p>
+    </div> 
+  
+   <div id="info-box" class="box">
+      <a href="https://fistralbeach.co.uk/fistral-beach-webcam/" target="_blank" id="webfeed">Live Fistral beach cam feed here</a>
+    </div>
+  
+  <div id="console">
+    <h1>Bathing Water Quality in Cornwall</h1>
+    <p>Data: <a href="https://www.gov.uk/government/statistical-data-sets/env17-bathing-water-quality-additional-datasets" target="_blank">Bathing Water Quality</a> in Cornwall (2023-2024). Weather data from <a href=https://openweathermap.org/api</a>OpenWeather API.</a></p>
+    
+    <div id="toggle">
+      <h3>Select a year</h3>
+      <label class="container">2024
+        <input id="style_2024" type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">2023
+        <input id="style_2023" type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <h3>Water Quality</h3>
+    </div>
+
+   <div id="legend">
+    </div>
+    
+    <div id="weather-info">
+      <h4>Weather at Fistral North Beach, Cornwall</h4>
+    </div>
+    
+    
+  </div>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
